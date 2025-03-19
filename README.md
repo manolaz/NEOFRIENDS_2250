@@ -8,7 +8,7 @@ An immersive, persistent open-world RPG that runs entirely in the browser, where
 
 ## Technical Foundation
 
-- Frontend ReactTypeScript with CanvasWebGL for rendering
+- Frontend Nextjs React TypeScript with CanvasWebGL for rendering
 - Backend Serverless architecture with blockchain state management
 - Blockchain Solana for transactions, ownership, and decentralized elements
 
