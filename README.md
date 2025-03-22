@@ -1,4 +1,4 @@
-# NeoFriends: Guardians of Tomorrow
+# Planet Pioneers: Guardians of Tomorrow
 
 ## Open-World Web Browser RPG with Solana Integration
 
