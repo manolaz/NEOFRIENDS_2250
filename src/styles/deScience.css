@@ -1,0 +1,367 @@
+/* Main DeSci page styles */
+.descience-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+.descience-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.descience-header h1 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.descience-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.wallet-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.connect-prompt {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.descience-nav {
+    margin-bottom: 2rem;
+}
+
+.descience-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.descience-nav li {
+    margin-right: 1rem;
+}
+
+.descience-nav button {
+    padding: 0.75rem 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #666;
+    border-bottom: 3px solid transparent;
+}
+
+.descience-nav li.active button {
+    color: #5552FF;
+    border-bottom: 3px solid #5552FF;
+    font-weight: 600;
+}
+
+.tab-content {
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.descience-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e1e1e1;
+    text-align: center;
+    color: #666;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.footer-links a {
+    color: #5552FF;
+    text-decoration: none;
+}
+
+/* Science NFT Minter styles */
+.science-nft-minter {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.mint-button,
+.submit-review-button,
+.fund-button,
+.access-button,
+.download-button {
+    background: #5552FF;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.mint-button:hover,
+.submit-review-button:hover,
+.fund-button:hover,
+.access-button:hover,
+.download-button:hover {
+    background: #4240d4;
+}
+
+.mint-button:disabled,
+.submit-review-button:disabled,
+.fund-button:disabled,
+.access-button:disabled {
+    background: #c7c7c7;
+    cursor: not-allowed;
+}
+
+.success-message {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #e6ffe6;
+    border: 1px solid #b3ffb3;
+    border-radius: 4px;
+}
+
+/* Peer Review styles */
+.submissions-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.submissions-list li {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.submissions-list li:hover {
+    border-color: #5552FF;
+}
+
+.submissions-list li.selected {
+    border-color: #5552FF;
+    background: #f9f8ff;
+}
+
+.status {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.status.pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status.approved {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status.rejected {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.review-form {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Funding styles */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.project-card {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card.selected {
+    border-color: #5552FF;
+    background: #f9f8ff;
+}
+
+.category-tag {
+    display: inline-block;
+    background: #e9ecef;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    color: #495057;
+    margin: 0.5rem 0;
+}
+
+.funding-progress {
+    margin-top: 1rem;
+}
+
+.progress-bar {
+    height: 10px;
+    background: #e9ecef;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #5552FF;
+    transition: width 0.3s ease;
+}
+
+.funding-stats {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: #666;
+}
+
+.funding-form {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Data Access styles */
+.datasets-list {
+    margin-bottom: 2rem;
+}
+
+.dataset-card {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.dataset-card:hover {
+    border-color: #5552FF;
+}
+
+.dataset-card.selected {
+    border-color: #5552FF;
+    background: #f9f8ff;
+}
+
+.dataset-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.access-badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+.access-badge.open {
+    background: #d4edda;
+    color: #155724;
+}
+
+.access-badge.token-gated {
+    background: #cce5ff;
+    color: #004085;
+}
+
+.access-badge.paid {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.owned-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #5552FF;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.8rem;
+}
+
+.access-granted {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+}
+
+.access-url {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    font-family: monospace;
+    margin: 1rem 0;
+    word-break: break-all;
+}
+
+.download-button {
+    margin-top: 1rem;
+}
