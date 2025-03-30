@@ -3,7 +3,7 @@ import { useWallet } from '@solana/wallet-adapter-react';
 import { useConnection } from '@solana/wallet-adapter-react';
 import { Program, AnchorProvider, BN } from '@project-serum/anchor';
 import { PublicKey } from '@solana/web3.js';
-import { ResearchFundingProgram, ResearchProjectAccount } from '../../contracts/ResearchFunding';
+import { ResearchFundingProgram, ResearchProjectAccount } from '../../blockchain-backends/data-client/ResearchFunding';
 
 interface ResearchFundingProps {
     program: Program;
