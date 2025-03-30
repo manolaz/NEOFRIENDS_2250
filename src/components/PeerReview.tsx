@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useWallet } from '@solana/wallet-adapter-react';
 import { useConnection } from '@solana/wallet-adapter-react';
-import { ScienceNFT } from '../../blockchain-backends/data-client/ScienceNFT';
+import { ScienceNFT } from '../../planet_pioneers-blockchain-backends/clients/solana/ScienceNFT';
 import { Program, AnchorProvider } from '@project-serum/anchor';
 import { PublicKey } from '@solana/web3.js';
 
